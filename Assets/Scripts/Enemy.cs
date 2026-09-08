@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
 
     }
 
-    public void ChangeHealth(int amount)
+    public virtual void ChangeHealth(int amount)
     {
         health += amount;
         healthLable.text = "" + health;
