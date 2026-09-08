@@ -15,7 +15,7 @@ public class ClickDetection : MonoBehaviour
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector3 mousePostion = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            print("The Mouse is at: " +  mousePostion);
+            //print("The Mouse is at: " +  mousePostion);
             RaycastHit2D hit = Physics2D.Raycast(mousePostion, Vector3.forward);
 
             if (hit.collider != null)

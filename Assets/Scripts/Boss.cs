@@ -5,6 +5,12 @@ public class Boss : Enemy
 {
     public string message = "I'm evil";
 
+    protected override void Start()
+    {
+        base.Start();
+        healthLable.text = message;
+    }
+
     public override void Move()
     {
         direction = transform.position - Vector3.zero;
